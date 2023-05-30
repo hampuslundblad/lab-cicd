@@ -1,0 +1,5 @@
+services:
+  lab-cicd:
+    image: ghcr.io/hampuslundblad/lab-cicd:latest
+    ports:
+      - 8080:80
