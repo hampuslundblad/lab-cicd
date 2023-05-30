@@ -30,7 +30,6 @@ jobs:
           ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
           # Import ssh key
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          cat ~/.ssh/id_ed25519
           # Set correct permissions on our ssh private key
           chmod 400 ~/.ssh/id_ed25519
         env:
